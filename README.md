@@ -13,6 +13,10 @@ Domains are spoofable if any of the following conditions are met:
 - SPF record never specifies `~all` or `-all`
 - DMARC policy is set to `p=none` or is nonexistent
 
+## Docker
+
+	docker build -t spoofcheck .
+	docker run --rm spoofcheck [DOMAIN]
 
 ## Dependencies
 - `dnspython`
